@@ -9,7 +9,7 @@ __version__ = "0.0.1"
 
 ext_modules = [
     Pybind11Extension("rsequence",
-        ["wrap.cpp", "rsequence.cpp"],
+        ["src/wrap.cpp", "src/rsequence.cpp"],
         define_macros = [('VERSION_INFO', __version__)],
         ),
 ]
