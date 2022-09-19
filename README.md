@@ -16,3 +16,12 @@ Then `rsequence` can be imported in python.
 
 
 For usage check out the example notebook 
+
+## Quick look
+This is how the low discrepancy sequence looks compared to a pseudorandom sample (uniform)
+![comparison](./img/compare.png)
+
+
+You can keep sampling from the same object, and the whole sequence will be low-discrepancy. 
+![sample](./img/stateful.png)
+
