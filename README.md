@@ -13,3 +13,6 @@ pip install .
 from the root of this repo 
 
 Then `rsequence` can be imported in python. 
+
+
+For usage check out the example notebook 
