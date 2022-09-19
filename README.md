@@ -1,4 +1,4 @@
-# R Sequence
+# R Sequence :game_die:
 
 Simple C++ class for sampling low discrepancy reccurrence sequence described in 
 [The Unreasonable Effectiveness of Quasirandom Sequences](http://extremelearning.com.au/unreasonable-effectiveness-of-quasirandom-sequences/)
