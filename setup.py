@@ -21,7 +21,7 @@ as described in http://extremelearning.com.au/unreasonable-effectiveness-of-quas
 '''
 
 setup(
-    name="python_example",
+    name="rsequence",
     version=__version__,
     author="Edoardo Pona",
     author_email="edoardo.pona@gmail.com",
