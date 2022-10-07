@@ -5,8 +5,14 @@
 #include <cmath>
 
 
-void print_vec(std::vector<float> &vec);
-float phi(float d);
+void print_vec(std::vector<double> &vec);
+double phi(double d);
+
+
+double LogOnePlusX(double x);
+double NormalCDFInverse(double p);
+double RationalApproximation(double t);
+
 
 // definition of templates is sometimes problematic if in .cpp 
 // https://stackoverflow.com/questions/3008541/template-class-symbols-not-found
@@ -40,13 +46,14 @@ class RSequence {
 
 	private:
 		int d;
-		float seed; 
-		std::vector<float> basis;
-		std::vector<float> current;   // current sample, excluding the seed 
+		double seed; 
+		std::vector<double> basis;
+		std::vector<double> current;   // current sample, excluding the seed 
 	
 	public:
-		RSequence(int d, float seed); 
-		std::vector<std::vector<float> > sample(int N);
+		RSequence(int d, double seed); 
+		std::vector<std::vector<double> > sample_uniform(int N);
+		std::vector<std::vector<double> > sample_normal(int N);
 
 };
 
